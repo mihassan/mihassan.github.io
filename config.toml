@@ -1,0 +1,29 @@
+baseURL = 'http://mihassan.com/'
+languageCode = 'en-us'
+title = 'Md Imrul Hassan'
+theme = 'papermod'
+
+[params.profileMode]
+enabled = true
+title = 'Welcome to My World'
+subtitle = 'Software Developer, Researcher, Philosopher'
+imageUrl = 'profile.jpg'
+imageTitle = 'Md Imrul Hassan'
+imageWidth = 200
+imageHeight = 200
+
+[[params.socialIcons]]
+name = 'facebook'
+url = 'https://www.facebook.com/mdimrul.hassan'
+
+[[params.socialIcons]]
+name = 'linkedin'
+url = 'https://www.linkedin.com/in/mihassan'
+
+[[params.socialIcons]]
+name = 'soundcloud'
+url = 'https://soundcloud.com/mdimrulhassan'
+
+[[params.socialIcons]]
+name = 'email'
+url = 'mailto:mihassan@gmail.com'
