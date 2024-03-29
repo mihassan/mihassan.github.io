@@ -27,3 +27,9 @@ url = 'https://soundcloud.com/mdimrulhassan'
 [[params.socialIcons]]
 name = 'email'
 url = 'mailto:mihassan@gmail.com'
+
+[[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    url = "/about-me/"
+    weight = 10
