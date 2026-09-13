@@ -1,15 +1,20 @@
-# Generated files by hugo
+# Hugo output and generated resources
 /public/
 /resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+.hugo_build.lock
 
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
-
-# Temporary lock file while building
-/.hugo_build.lock
-
+# Local system/editor files
 .DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local environment and test artefacts
+.env
+.env.*
+node_modules/
+coverage/
+__pycache__/
+*.py[cod]
+*.log
