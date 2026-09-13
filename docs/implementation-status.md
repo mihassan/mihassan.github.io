@@ -48,9 +48,16 @@ Stop the current background preview:
 kill "$(cat /tmp/mihassan-homepage-demo/server.pid)"
 ```
 
-## Staged publication plan
+## Staged publication
 
-The existing `mihassan/mihassan.github.io` `main` branch and live GitHub Pages site remain the current public production state. The approved next stage is to publish this source only to `portfolio-redesign`, then create and verify an isolated Cloudflare Pages preview. A merge to `main`, custom-domain attachment, DNS change and production cutover remain separately gated.
+- The redesign was initially committed to `mihassan/mihassan.github.io` branch `portfolio-redesign` as `4f9a7fad15f1d11ec92b84936b004b48fdbdbdb7`; `main` remained at `08bf483f6ed24edf63914852d3afe585a46d8e1f`.
+- Cloudflare Pages project `mihassan-portfolio` was created with production branch `main`. The redesign was deployed only as a **Preview** environment for `portfolio-redesign` using Direct Upload.
+- Stable preview: <https://portfolio-redesign.mihassan-portfolio.pages.dev/>
+- Initial immutable deployment: <https://58cc1168.mihassan-portfolio.pages.dev/>
+- Credential-free public verification passed all 24 content routes, the designed 404, 25 static assets, canonical metadata, curated Work/Notes sets and Cloudflare delivery. Evidence: `/tmp/mihassan-homepage-publication/public-preview-verification.log`.
+- The existing `www` GitHub Pages site remained available and the previously observed apex error remained unchanged. No custom domain, DNS, TLS, `main` branch or production-hosting change was made.
+
+Direct Upload does not automatically redeploy when the GitHub branch changes. Any later article edit requires a fresh verified build and preview deployment.
 
 ## Explicit limitations
 

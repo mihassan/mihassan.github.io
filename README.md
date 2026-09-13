@@ -71,12 +71,13 @@ Software source code is available under the MIT License. Original articles, proj
 
 ## Staged publication
 
-The existing public repository is `mihassan/mihassan.github.io`, whose `main` branch serves the earlier site. Publication of this redesign is deliberately staged:
+The existing public repository is `mihassan/mihassan.github.io`, whose `main` branch still serves the earlier site. This redesign is staged separately:
 
-1. Preserve the existing `main` branch and its live GitHub Pages site.
-2. Copy this verified source into a separate `portfolio-redesign` branch.
-3. Review the branch and an isolated Cloudflare Pages preview.
-4. Merge or change the custom-domain hosting only after a separate final approval.
+- Source branch: [`portfolio-redesign`](https://github.com/mihassan/mihassan.github.io/tree/portfolio-redesign)
+- Cloudflare Pages preview: <https://portfolio-redesign.mihassan-portfolio.pages.dev/>
+- Preview project: `mihassan-portfolio`, with `main` reserved as its production branch
+
+The current preview uses Cloudflare Pages **Direct Upload**. A push to `portfolio-redesign` does not redeploy it automatically; build and deploy the verified branch output explicitly when the branch changes. A merge, custom-domain attachment, DNS change and production cutover still require separate approval.
 
 Review staged files before every commit. Never add private research archives, `.env` files, alternate contact details, downloaded audio, or generated `public/` output.
 
